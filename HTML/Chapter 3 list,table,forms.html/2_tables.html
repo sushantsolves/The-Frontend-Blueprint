@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+
+    <style>
+      table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      th {
+        background-color: #4f46e5;
+        color: white;
+        padding: 12px;
+        text-align: left;
+      }
+
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f4f4f4;
+      }
+
+      tr:hover {
+        background-color: #e0e7ff;
+        transition: 0.3s;
+      }
+
+      caption {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <h1>Tables in HTML</h1>
+
+    <table>
+    
+     <thead>
+        <!--Wrap the table head or header-->
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!--Used to wrap the table body-->
+        <tr>
+          <td>Sushant</td>
+          <td>Software Developer</td>
+          <td>$70000</td>
+        </tr>
+        <tr>
+          <td>Rahul</td>
+          <td>AI Engineer</td>
+          <td>$5000</td>
+        </tr>
+        <tr>
+          <td>Rohan</td>
+          <td>Cyber Agent</td>
+          <td>$10000</td>
+        </tr>
+
+        <tr>
+          <td colspan="3">Thank you</td>
+          <!--colspan = 1 is the by default value.-->
+          <td colspan="2">so much</td>
+        </tr>
+      </tbody>
+
+
+    </table>
+    
+  </body>
+</html>
