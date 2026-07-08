@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Forms</title>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+
+    <form action="/submit.html">      <!--action attribute -> pass the location where the form data will be stored. (Work of backend)--> 
+        <div>                           <!-- We used div here bcz it will take the complete line for itself, or entire line only for 'name'.-->
+            <label for="name">Your Name</label>
+            <input id="name" type="text" placeholder="Enter Name" required>         <!-- 'required'-> is used to make the column as a req field, like it is necessary to fill. -->
+        </div>
+
+
+        <div>
+            <label for="ph">Phone No</label>                        <!--Here for and id should have contain the same(ph), as if we click on "Phone" or checkbox the cursor will directly move to the checkbox.-->
+            <input id="ph" type="tel" placeholder="Enter Phone">
+        </div>
+
+
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter Email" required>
+        </div>
+
+
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter Password" required>     <!-- required or required='True'-->
+        </div>
+
+
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input id="dob" type="date" placeholder="Enter your DOB" required>
+        </div>
+
+
+        <!--! Dropdown (Select Input) for gender -->
+         <div>
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+         </div>
+
+
+         <!--! Radio Buttons for Subscription Plans -->
+          <div>
+            <p>Subscription Plan</p>
+            <input id="basic" type="radio" name="subscription" value="basic">   <!-- Type="radio" and name="same", fir jitne chahe utne input or label kr lo, unn me se ek hi select hoga.-->
+            <label for="basic">Basic</label>
+
+            <input id="premium" type="radio" name="subscription" value="premium">
+            <label for="premium">Premium</label>
+
+            <input id="vip" type="radio" name="subscription" value="vip">
+            <label for="vip">VIP</label>
+          </div>
+
+
+
+          <!--! Checkbox for agreement to terms  -->
+          <div>
+            <input id="terms" type="checkbox" required>
+            <label for="terms">I agree to the terms and conditions.</label>
+          </div>
+
+
+          <!--! Text Area for Comments  -->
+          <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" palceholder="Enter your comments here" rows="4"></textarea>
+          </div>
+
+
+          <!-- !Submit Button -->
+           <button type="submit">Submit</button>
+    </form>
+<!-- form ends here -->
+</body>
+</html>
