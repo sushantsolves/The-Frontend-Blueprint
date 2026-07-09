@@ -8,8 +8,8 @@
 <body>
     <h1>Forms in HTML</h1>
 
-    <form action="/submit.html">      <!--action attribute -> pass the location where the form data will be stored. (Work of backend)--> 
-        <div>                           <!-- We used div here bcz it will take the complete line for itself, or entire line only for 'name'.-->
+    <form action="/submit.php">      <!--action attribute -> pass the data to php where it will be stored later (Work of backend)-->      <!--PHP -> Backend lang, can be node.js, django, spring boot, asp.net --> 
+        <div>                        <!-- We used div here bcz it will take the complete line for itself, or entire line only for 'name'.-->
             <label for="name">Your Name</label>
             <input id="name" type="text" placeholder="Enter Name" required>         <!-- 'required'-> is used to make the column as a req field, like it is necessary to fill. -->
         </div>
@@ -76,7 +76,7 @@
           <!--! Text Area for Comments  -->
           <div>
             <label for="comments">Comments</label>
-            <textarea id="comments" palceholder="Enter your comments here" rows="4"></textarea>
+            <textarea id="comments" placeholder="Enter your comments here" rows="4"></textarea>
           </div>
 
 
