@@ -1,0 +1,33 @@
+<!-- All three types of including styles and selectors are used. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        button{
+            background-color: blue;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="box">
+        This is a example text 1, where we are trying to set the background to blue of a div element.
+    </div>
+
+    <h1 class="headings">This is heading 1.</h1>
+    <h2 class="headings">This is heading 2</h2>
+    <h3 class="headings">This is heading 3</h3>
+
+    <button style="background-color: pink;">Example Button</button>
+
+
+    <!--! Note: The preference/priority is given to the code which will be written in the last. As we use all three types of including styles to the bg of button but it only follows the last element.  -->
+</body>
+</html>
