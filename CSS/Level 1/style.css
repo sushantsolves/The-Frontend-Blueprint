@@ -52,3 +52,24 @@ button{
 }
 */
 
+
+
+/*!===========================================
+   For text.html file
+   =========================================== */
+
+#para_one{
+    font-family:arial, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* We can even give multiple types of fonts to a sigle element as if the first one didn't work on the user's web then the second one will try if the second one will also fail then the next one */
+    /*! This technique is called as Fall Back Mechanism */
+}
+
+
+#para_three{
+    font-size: 25px;
+    line-height: 50px;
+    text-transform: capitalize;      /*The capitalize will make the first letter of every word in uppercase.*/
+    /* In case of "none", It will make all the current and previous operations of transformation to none. */
+}
+
