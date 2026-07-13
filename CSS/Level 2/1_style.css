@@ -1,0 +1,42 @@
+/* ===================================
+    For index.html
+   ===================================
+*/
+
+#heightcheck{
+    height:100px;
+    background-color: pink;
+}
+
+div{
+    height:100px;
+    background-color: burlywood;
+
+    width:700px;
+    text-align: end;
+}
+
+h2{
+    width:200px;
+    background-color: aqua;
+}
+
+/* We can apply these properties to any heading, para, div, with id, class, etc. */
+
+
+
+#bordercheck{
+    border-width:5px;                    /* to define the border width*/
+    background-color: blueviolet;      /* to style the bg color inside the border area */
+    border-style: solid;                 /* to style the boundry line of the border */
+    border-color: brown;               /* to style the color of the boundary line */
+    text-align: center;                  /* this will make the text align to the center part wrt the border area not the whole page.*/
+    
+    /*! 'border' shorthand-> it is a shortcut to define three border prop in one go, as (border-width, border-style, border-color) with 'border' prop.
+        ex- (border: 5px solid blueviolet) */
+
+
+    border-radius: 50%;                /* prop to make the edges of the rectangular border, from sharp to curve.
+                                          can be done by two methods ->50% (percentage) or 10px (with pixels) */
+    /*? Trick: if the height and width of the border will be the same and then put radius= 50% then the border will become a circle.  */
+}
