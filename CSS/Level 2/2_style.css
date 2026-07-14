@@ -1,0 +1,34 @@
+div{
+    height:100px;
+    width:100px;
+    border:2px solid brown;
+    background-color: aqua;
+    /* border-radius:50%;
+    text-align: center; */
+
+    /*! PADDING */
+    /* -> Use padding when you want to extent the content. */
+    /* Till now if we see the borders of the div block the text is completely left aligned wrt the squares/borders. */
+    padding-left:25px;
+    /* But now if we see the text have some space on the left side and with inspect the main content is starting with the text but the before area is kept by the 'padding' */
+    /* Note: you can individually analyze the padding with the help of box modelling, it will be showed with green color. */
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    /* This will give the padding of 25 px from every side */
+
+    /** Shorthand for padding */
+    padding:25px; /*If we want same padding from all direction or, */
+    padding: 1px 2px 3px 4px;   /* if we want diff padding, then follow clockwise (top|right|bottom|left) */
+
+
+    /*! MARGIN  */
+    /* -> Use margin when you want to make space around some content. */
+    /* -> as padding you can also analyze margin with inspect >box modelling, and it is represented by 'orange' part. */
+    margin-top: 25px;
+    /* if you inspect it here, the top part have some extra orange space and in right side (across line bcz of the div) */
+
+    /** Shorthand for margin  */
+    margin:50px;        /*same margin to all side*/
+    margin:25px 50px 60px 70px;     /*from clockwise -> (top|right|bottom|left) */
+}
