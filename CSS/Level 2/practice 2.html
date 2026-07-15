@@ -1,0 +1,57 @@
+<!-- generate a traffic light like str with css -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light</title>
+    <style>
+        #body{
+            width: 75px;
+            height:225px;
+            background-color: black;
+            padding-top: 15px;
+            /* padding-bottom: 50px; */
+            /* margin-top: 25px;
+            margin-bottom: 25px; */
+        }
+        #light1{
+            width:45px;
+            height:45px;
+            background-color: red;
+            border-radius: 50%;
+            
+            /*margin-left: 15px;          /* To make a dist from the corner of traffic lamp (black part) */
+            
+            /*margin-bottom: 15px;        /*! Margin: To make a empty space, padding: to stretch the element */
+            margin:15px;
+        }
+
+        #light2{
+            width:45px;
+            height:45px;
+            background-color: yellow;
+            border-radius: 50%;
+
+            margin:15px
+            /* margin-left: 15px;
+            margin-bottom:15px */
+        }
+        #light3{
+            width:45px;
+            height:45px;
+            background-color: green;
+            border-radius: 50%;
+
+            margin: 15px;
+        }
+    </style>
+ </head>
+ <body>
+    <div id="body">
+        <div id="light1"></div>
+        <div id="light2"></div>
+        <div id="light3"></div>
+    </div>
+ </body>
+ </html>
