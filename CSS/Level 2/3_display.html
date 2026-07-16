@@ -1,0 +1,96 @@
+<!-- Display Properties -->
+<!-- AS we already known: There are two types of elements are present in HTML
+        BLOCK Elements- div,headings,etc
+        INLINE Elements- span,button,input,a,etc
+
+    But we can change their properties according to our need.
+        Syntax: display: inline/ block/ inline-block/ none   
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <!--! Style for part 1
+    <style>
+        #div-1{
+            background-color: palevioletred;
+            display: inline;        /* The div will now act as a inline element */
+        }
+        #button-1{
+            display: block;         /* Properties of button changed as block element */
+        }
+    </style>
+    -->
+
+    <style>
+        #div-2{
+            height: 100px;
+            width: 100px;
+            padding:25px;
+            margin:25px;
+            display: inline-block;      /*before: display:inline */
+            
+        }
+
+        #div-3{
+            height: 100px;
+            width: 100px;
+            padding:25px;
+            margin:25px;
+            background-color: rgba(255,0,0, 0.5);
+            /* display: none; */
+        }
+    </style>
+</head>
+<body>
+    <!--! =========================================== -->
+    <!--! Display Properties                          --> 
+    <!--! =========================================== -->
+
+    <!--! Part 1: 'inline' and 'block'
+    <div id="div-1">This is a div</div>
+    <button id="button-1">Click Me</button>
+    <br>
+    <hr> 
+    -->
+
+    <!--! Part 2: 'inline-block' and 'none'  -->
+    <h1>Display Background</h1>
+    <div id="div-2" style="background-color: blue;">Box 1</div>
+    <div id="div-3" >Box 2</div>
+    <div id="div-2" style="background-color: yellow;">Box 3</div>
+    <div id="div-2" style="background-color: green;">Box 4</div>
+    <!-- Here for the above boxes we have the padding and margin set for both top and bottom too but bcz of display:inline prop, it will not work with top and bottom part.
+        To overcome this issue we have 'inline-block'-> Means here we follow the property of display item acc to inline but can make block prop including margin and padding here -->
+
+
+    <!-- And in the last we have "none", it will completely remove that item from the web. and there will be no space for it on the web -->
+    <!-- As we have done it with box 2 -->
+
+
+    <!--! visibility: hidden  -->
+    <!-- These both may look similar but have a one small difference, here the item gets hidden but his place is always stored on the web -->
+
+
+    <!--! =========================================== -->
+    <!--! Part 3: Alpha Channel                       --> 
+    <!--! =========================================== -->
+    <!-- To set the opacity which ranges from 0 to 1. -->
+
+    <!--
+    RGBA-
+        color: rgba(255,0,0,0.7)
+        Red channel-> ranges from 0 to 255
+        green/blue channel -> same as Red
+        alpha channel -> ranges from 0 to 1
+    -->
+
+    <!-- We can use it in background-color for anything like in box 2. -->
+
+
+</body>
+</html>
