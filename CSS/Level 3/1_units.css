@@ -1,0 +1,70 @@
+/* units in css --> specifically relative units here as we already go through the absolute units. */
+
+#box1{
+    height: 100px;
+    width: 200px;
+    background-color: green;
+
+    font-size: 10px;
+}
+
+#box2{
+    /*
+    =============================================
+    Percentage(%) 
+    =============================================
+    -> It is often used to define a size as relative to an element's parent object.
+    */
+
+    /* Lets we create a div2 inside a div1, so here div1 will act as the parent class of the div2.
+        and lets we take div1 height as 100px so its 33%(amount set in div2) will be given to the div2 part.(33px)
+    */
+
+    height: 100%;
+    width: 40%;
+    margin-left: 10%;
+    background-color: red;
+
+
+    /*
+    =================================================
+    Em
+    =================================================
+    --> When we talk about font size, it takes its parent class as relative with, but when we talk about other prop like height or width it takes size of its own element font size as relative.
+    */
+    font-size: 2em;             /*Here 2em represent the font size to be the double of its parent class(10px here for "Box 1"). */
+    width: 5em;                 /*(element font-size: 2em = 2x(10px); and width: 5em = 5 x (20px);)  */
+}
+
+
+    /*
+    =========================================================
+    Rem (Root Em)
+    =========================================================
+    --> Font size of the root element
+        means directly goes to the most outer level,(most of time html/body part,) as we have by default text size of the web as 16px, so if you write something like randomly 5rem = 5 x 16px = 80px
+    */
+
+
+#box3{
+
+    margin-top: 200px;
+    height: 200px;
+    width:100px;
+    background-color: blue;
+}
+
+#box4{
+    height:40%;
+    width: 50%;
+    background-color: orange;
+}
+
+    /* SOME OTHER UNITS */
+    /*
+    ===================================
+    vh: relative to 1% of viewport height (viewport height: web which is visible to us, or you can say web height )
+    ===================================
+    vw: Similarly to vh, as respect to our screen height or width
+    ===================================
+    */
