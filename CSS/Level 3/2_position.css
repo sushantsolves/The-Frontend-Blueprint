@@ -1,0 +1,117 @@
+/* position (+sticky) and z-index */
+
+/* 
+==============================================================
+!                            POSITION
+==============================================================
+->The position CSS property sets how an element is positioned in a document.
+    position: static/relative/absolute/fixed
+*/
+
+
+/*
+=================================
+!Static
+=================================
+   -> default position (the top,right,bottom,left, and z-index prop(later you get) have no effect)
+        here, 'top' is like a reference that from that point how much dist you want for your element. and these prop don't work with static.
+*/
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#box1{
+    position: static;
+    top: 50px;                  /*didn't work as top or left and other prop didn't work with static.*/
+    left:100px;
+}
+
+
+/* 
+=================================
+!Relative
+=================================
+-> element is relative to itself.
+ */
+
+#box2{
+    position: relative;
+    top:10px;                   /*here what happened is- when we write posn:relative, then the position of the box at that moment becomes its reference, and when we write top:10px, so it takes 10px dist from the top line of its previous posn (means shifted to 10px down).*/
+    left:20px
+}
+
+
+/*
+===================================
+!Absolute
+===================================
+->element relative to its closest positioned (non-static) ancestors.
+*/
+
+#box3{              /* Now box3 ancestor is body tag itself, means its ancestor or it is relative to the page now.*/
+    position: absolute;     /*here if you only write this then you will see that the box 4 will be disappeared, but in real, it is under the box3 as box3 is now in respect with web/body, and we can set its position now. */
+    top:1000px;               /* Now you will notice the change for box3, and where it is taking the reference -> closest positioned ancestors -> which is body tag here -> and body tag is relative with web page. */
+    right:50px;
+}
+
+
+
+/* 
+===================================
+!fixed
+===================================
+-> positioned relative to browser.(removed from flow)
+    -> you can think similar to box3 but there relative was ancestors which could be the web in some cases, but here it is fixed to have the web as reference. */
+
+#box4{
+    position: fixed;
+    bottom: 100px;      /*here we give him posn wrt to bottom of browser*/
+
+    /*The best thing you noticed here that box4 position will be fixed on the page, no matter where you scroll */
+    /*? It is mostly can be used in case of footers, so that they were always have fixed position from the bottom of our browser. and also can be used for header and mainly for the nav bar of header.*/
+
+    z-index: 1;
+}
+
+
+
+/*
+=====================================
+!sticky
+=====================================
+->gets fixes according to the user scroll.
+*/
+
+#box5{
+    position: sticky;
+    top:100px;              /*Now it will behave like fixed after the user scroll to its position on the page, till it will nowhere on the screen. after scrolling down it will get fixed on its position accoding to the web (here 100px from the top of the screen) */
+}
+
+
+
+
+
+/* 
+=====================================================================
+                        Z-INDEX
+=====================================================================
+-> In the web, most of the elements overlap with each other. In this overlapping, who will be on top and who will be on bottom will be decided by z-index.
+    ->By default, it is set to auto (z-index:auto(0)). means the element which is written first on the code will appear at the bottom and the element which is written later will appear on the top.
+    -> Syntax-  z-index:1/2/....
+                z-index:-1/-2/...
+                
+                
+
+        -> if we talk about its reference then it comes from 3D axis, as there is the z-axis represent the 3rd dimension so here z-index represent the 3rd order as the web is already in 2D.
+            and also if we give values for -ve, like left:-20px, so the element will shift 20px to left as the value is in negative.
+*/
+
+
+/* For example you will see that when box 4,5 collide box 4 will go under the box5, now we are going to change that, by changing the z-index of box4 to 1. */
+
+/* Note: for static things like box1 we cannot use it, means */
