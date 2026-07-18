@@ -1,0 +1,39 @@
+/* 
+==============================================
+!Insert background image:- syntax: "background-image: url(<img address>)"
+==============================================
+*/
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+/* 
+===============================================
+!background-size: cover/ contain/ auto
+===============================================
+    auto --> as the img is shown earlier as like only black or with very zoom in.
+    cover --> pic will completely cover the element and have no space left. (In my words: img width = element width)
+    contain --> pic will come inside but priority is pic will completely visible here, no matter repetition occurs or not. (In my words: img height = element height)
+            -> to stop repeatition in contain we use "background-repeat: no-repeat"
+
+*/
+
+
+#box1{
+    background-image: url("example/ex1 (1).jpg");
+    /* only at this point point you will see a complete black or very poor pixelated image in the box, here the 'background size prop comes in the game. */
+
+    background-size: contain;
+    background-repeat: no-repeat;       /*In case of cover if we don't want repeattion of our img then we use this, then only the img will appeaar there and the other part will be blank. */
+}
+
+body{
+    background-image: url("example/ex1\ \(3\).jpg");
+}
+
+/* Note: search "unsplash.com" -> here you will find many copyright free images. and can download it. */
