@@ -1,0 +1,97 @@
+/* 
+=======================================================
+                    FLEXBOX(Flexible Box Layout)
+=======================================================
+-> It is a one-dimensional layout method for arranging items in rows or columns.
+
+-> In most of the cases we call horizontal direction as main axis and vertical as flex container. but can be reversed too.
+*/
+
+body{
+    text-align: center;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+}
+/* 
+===============================================
+!FLEXBOX DIRECTION
+===============================================
+->It sets how flex items are placed in the flex container, along which axis and direction.
+    flex-direction: row; (default)--> means now the main axis of the element is row (main axis = row = left to right)
+    flex-direction: row-reverse; --> means main axis is row but direction is reversed. (main axis = row = right to left)
+    flex-direction: column; --> similarly (main axis = column = top to bottom)
+    flex-direction: column-reverse; --> (main axis = column = bottom to top)
+
+?       -> One of the main prop you will see in column that all the boxes(elements) try to fit them inside the container,even though their size is defined(100px).
+            means in the flex, every element try to fit themselves inside the main container(with display:flex), no matter they have to change their size or not. (till the font size didn't interupt)-> font will not reduce himself.
+*/
+
+
+/* 
+===============================================
+!FLEX PROPERTIES
+===============================================
+!-------------------------------------------|
+!--> Properties for the Flex Container      |
+!-------------------------------------------|(-3:9:30)
+        ->justify-content:flex-start/flex-end/center/space--evenly/space-between/space-around(dist on the end = half of dist in between)
+        ->flex-wrap:nowrap/wrap/wrap-reverse
+        ->align-items:alignment along the cross axis.
+        ->align-content:alignment of space between & around the content along cross axis
+*/
+
+
+
+
+
+#container {
+    width: 800px;
+    height: 700px;
+    display: flex;      /* bcz of this line the container and the boxes aligned to the left. */
+    flex-direction: row;      /* decide which is the main line or acc to how the boxes will arrange */
+    justify-content: center;    /* align the content across the main axis */
+    align-items: center;    /* align the content across cross axis */
+    align-content: flex-start;      /*all items to the top or all items to the end(if flex-end) --> means it will not left any space between the contents */
+    flex-wrap: wrap;
+}
+
+
+/*
+!---------------------------------------|
+!--> Properties for the Flex Item       | (-3:00:00)(approx)
+!---------------------------------------|
+        ->align-self: if you want to align any individual element across its cross axis, then use this prop.
+        ->flex-grow: As we know that if the container shrink, all the boxes adjust themselves acc to that with factor 1(evenly), but if we want any particular box to shrink at double or half wrt other boxes then we use this.
+        ->flex-shrink: Similarly, as flex-grow and if we want 0% shrink then we use 0 there.
+*/
+
+
+#box1{
+    width: 200px;
+    background-color: aqua;
+}
+
+#box2{
+    height: 200px;
+    background-color: pink;
+}
+
+#box3{
+    width:200px;
+    background-color: darkkhaki;
+}
+
+#box4{
+    width: 300px;
+    background-color: indianred;
+}
+
+#box5 {
+    width:300px;
+    background-color: slateblue;
+}
