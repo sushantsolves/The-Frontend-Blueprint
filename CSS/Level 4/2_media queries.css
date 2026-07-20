@@ -1,0 +1,46 @@
+/*  
+!=======================================================
+!                    MEDIA QUERIES
+!=======================================================
+--> Help create a responsive website (means web for all types of websites)
+--> Syntax: @media(<conditions at which the change initialize>){
+                <changes to be followed when web width will be 600px>
+            }
+            
+            
+    ->to check it "web> inspect> toggle device toolbar"
+*/
+
+
+div{
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+}
+
+@media(min-width:600px){
+    div{
+        background-color: red;
+    }
+}
+
+@media(max-width:700px){
+    div{
+        background-color: green;
+    }
+}
+
+
+
+
+/*
+-------------------------------------------------------
+ Media Queries can also be used in combined states
+-------------------------------------------------------
+--> just as we do in python with "and" and "or" operators. 
+*/
+@media(min-width:200px) and (max-width:300px){
+    div{
+        background-color:blue;
+    }
+}
