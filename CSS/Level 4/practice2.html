@@ -1,0 +1,51 @@
+<!-- 
+ Q: Add a media query to implement the following:
+    1. the color of a div changes to blue for viewport width less than 300px.
+    2. the color of a div changes to green for width between 300px & 400px.
+    3. the color of a div changes to yellow for width between 400px & 600px.
+    4. the color of a div changes to orange for width above 600px.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 2</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        
+        @media(max-width:300px){                /* blue color is web size is less than 300px */
+            div{
+                background-color: blue;
+            }
+        }
+
+        @media(min-width:300px)and (max-width:400px){ 
+            div{
+                background-color: green;
+            }
+        }
+
+        @media(min-width:400px)and (max-width:600px){ 
+            div{
+                background-color: yellow;
+            }
+        }
+
+        @media(min-width:600px){ 
+            div{
+                background-color: orange;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

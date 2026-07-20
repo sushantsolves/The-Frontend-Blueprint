@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar with flexbox</title>
+    <style>
+        .navbar ul{
+            background-color: aqua;
+            display: flex;              /* items in single line */
+            justify-content: space-evenly;      /* space between items -> it will not work here bcz there is only ul is its child class and it is taking it as a complete element.*/
+        }
+
+
+        a{
+            text-decoration: none;
+            color: black;                       
+        
+        }
+
+        li{
+            list-style-type: none;      /* to remove or change the circle dots from starting or point identations */
+            display: inline;
+            background-color: white;
+            align-self: self-end;
+        }
+
+        #outer{
+            height: 400px;
+            width: 400px;
+            background-color: darkgoldenrod;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #inner{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Help</a></li>
+    </ul>
+    </div>
+
+
+    <div id="outer">
+        <div id="inner">
+        </div>
+    </div>
+</body>
+</html>
