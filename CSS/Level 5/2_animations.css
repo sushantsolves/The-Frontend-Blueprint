@@ -1,0 +1,58 @@
+/* 
+!===================================================================================================================
+!                                                  ANIMATIONS
+!===================================================================================================================
+--> It could be said as a part of transition but in a better way.
+--> Here we follow a template for applying the animations:
+        @keyframes myName{
+            from {font-size: 20px;}
+            to {font-size: 40px;}
+
+*/
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+
+    /* animation-name: colorAnimate;
+    animation-duration: 0.50s;
+    /* animation-timing-function: ease-in; 
+    animation-delay: 05s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    /* ! Animation shorthand */
+    animation: colorAnimate 0.50s none 0.5s infinite alternate
+}
+
+@keyframes colorAnimate {
+    from {
+            background-color: aquamarine;
+            left:0px;
+        }
+    to {
+            background-color: red;
+            left:200px
+        }
+    /* but this alone will not apply any change to the web, to apply animation we use animation properties. */
+}
+
+
+
+/* 
+!------------------------------------------------------------------
+!                    ANIMATION PROPERTIES
+!------------------------------------------------------------------
+        ->animation-name --> which animation to come
+        ->animation-duration --> animation duration on the screen
+        ->animation-timing-function --> how animation should come (like fast, slow come)
+        ->animation-delay --> after how muuch delay my animation will come (all these four prop are like transition prop)
+        ->animation-iteration-count --> how many times should my animation iterate.
+        ->animation-direction --> define the direction of the animation or element. (normal/reverse/alternate/alternate-reverse)
+*/
