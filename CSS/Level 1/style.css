@@ -1,5 +1,5 @@
 /*!===========================================
-   For index.html, the below code
+   For 1_WaysToStyle.html, the below code
    ===========================================
 */
 
@@ -30,7 +30,7 @@ button{
 
 
 /*!=================================================
-   For selectors.html file
+   For 2_selectors.html file
    =================================================*/
 
 /* div{
@@ -55,7 +55,7 @@ button{
 
 
 /*!===========================================
-   For text.html file
+   For 3_text.html file
    =========================================== */
 
 #para_one{
@@ -73,3 +73,13 @@ button{
     /* In case of "none", It will make all the current and previous operations of transformation to none. */
 }
 
+
+
+/* 
+Note: For comments in CSS:-
+        /* -> for normal uses
+        /** -> highlight the point (bcz of extension,not work in every system.
+        /*! -> text to be red   (bcz of extension)
+        /*? -> text to be blue  (bcz of extension)
+        // -> to get a strikethrough or strikeout on the text
+*/
