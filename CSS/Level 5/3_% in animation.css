@@ -1,0 +1,48 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+
+    /* animation-name: colorAnimate;
+    animation-duration: 0.50s;
+    /* animation-timing-function: ease-in; 
+    animation-delay: 05s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    /* ! Animation shorthand */
+    animation: colorAnimate 0.50s none 0.5s infinite alternate
+}
+
+@keyframes colorAnimate {
+    0% {
+            background-color: aquamarine;
+            left:0px;
+        }
+    
+    50% {                           /*back then we have only two options (start and end) but now we can animate things even betweeen the process or at diff levels.*/
+        background-color: blue;
+    }
+
+    100% {
+            background-color: red;
+            left:200px
+        }
+    /* but this alone will not apply any change to the web, to apply animation we use animation properties. */
+}
+
+
+
+
+/* 
+!========================================================================================================================================
+!                                                  PERCENTAGE IN ANIMATION
+!========================================================================================================================================
+--> We have already look into "from" and "to" during defining keyframe of animation but here the percentage gives us the chance to make it more flexible.
+
+*/
