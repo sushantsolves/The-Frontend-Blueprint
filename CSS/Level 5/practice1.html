@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loaders using css</title>
+
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            /* border: 10px solid lightgreen; */
+            border-top:10px solid black;
+            border-radius: 50%;
+
+            animation-name: loader;                 /*sometimes short hand not work here*/
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            
+        }
+
+        #circle2{
+            border: 10px solid lightgreen;
+            border-top:10px solid black;
+            border-radius: 50%;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes loader {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Loader Type 1</h1>
+    <div id="circle1"></div>
+    <br>
+    <hr>
+    <h1>Loader Type 2</h1>
+    <div id="circle2"></div>
+</body>
+</html>
