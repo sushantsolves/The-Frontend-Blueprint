@@ -1,0 +1,44 @@
+*{
+    background-color: black;
+}
+
+
+/*!=============== Hero Sectiion ================*/
+.hero{
+    position: relative;
+}
+
+/* #heroSecBG::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+} */
+
+#heroSecBG{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.header{
+    margin: 0;
+    height: 200px;
+    width: 0px;
+}
+
+#heroLogo{
+    height: 200px;
+    width: auto;
+    z-index: 2;
+    margin-left: 200px;
+    
+
+    position: relative;
+    mix-blend-mode: screen;
+    background: rgba(100%,0,0,0);
+}
